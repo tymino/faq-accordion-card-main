@@ -1,0 +1,152 @@
+:root {
+  /* Colors Primary Text */
+  --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+  --softRed: hsl(14, 88%, 65%);
+
+  /* Background gradient */
+  --softViolet: hsl(273, 75%, 66%);
+  --softBlue: hsl(240, 73%, 65%);
+
+  /* Neutral Text */
+  --veryDarkGrayishBlue: hsl(237, 12%, 33%);
+  --darkGrayishBlue: hsl(240, 6%, 50%);
+
+  /* Dividers */
+  --lightGrayishBlue: hsl(240, 5%, 91%);
+
+  /* Typography Font */
+  --fontSize: 12px;
+  --fontFamily: 'Kumbh Sans', sans-serif;
+  --fontWeight400: 400;
+  --fontWeight700: 700;
+}
+
+/*
+  - Mobile: 375px
+  - Desktop: 1440px
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily);
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(0deg, var(--softBlue), var(--softViolet));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.images__wrapper {
+  position: relative;
+}
+
+.image__illustration-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.image__bg-pattern--desktop {
+  position: absolute;
+  right: 78px;
+  bottom: -140px;
+}
+.image__box--desktop {
+  position: absolute;
+  left: -92px;
+  bottom: 124px;
+}
+.image__woman-online--desktop {
+  margin-top: 80px;
+  margin-right: 80px;
+  margin-bottom: 80px;
+  margin-left: -80px;
+}
+
+.image__bg-pattern--mobile {
+  display: none;
+}
+.image__woman-online--mobile {
+  display: none;
+}
+
+
+.faq__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__header {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.faq__content {
+  font-size: 1.2rem;
+
+  margin-right: 80px;
+  padding: 20px 0px;
+  width: 340px;
+  border-bottom: 1px solid var(--lightGrayishBlue);
+}
+.content__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content__title {
+  font-weight: var(--fontWeight400);
+}
+.content__title:hover {
+  color: var(--softRed);
+}
+.content__title--active {
+  font-weight: var(--fontWeight700);
+}
+
+.content__arrow {  
+  transform: rotate(0deg);
+}
+.content__arrow--active {  
+  transform: rotate(180deg);
+}
+
+
+.content__info {
+  display: none;
+  margin-top: 10px;
+  padding-right: 20px;
+}
+
+.content__info--active {
+  display: block;
+}
+
+
+.attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
