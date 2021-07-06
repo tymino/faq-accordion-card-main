@@ -46,9 +46,10 @@ body {
 }
 
 .container {
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   background-color: #fff;
   border-radius: 10px;
 }
@@ -90,6 +91,7 @@ body {
 .faq__wrapper {
   display: flex;
   flex-direction: column;
+  margin-top: 80px;
 }
 
 .faq__header {
@@ -100,8 +102,7 @@ body {
 
 .faq__content {
   font-size: 1.2rem;
-
-  margin-right: 80px;
+  margin-right: 84px;
   padding: 20px 0px;
   width: 340px;
   border-bottom: 1px solid var(--lightGrayishBlue);
@@ -116,7 +117,7 @@ body {
 .content__title {
   font-weight: var(--fontWeight400);
 }
-.content__title:hover {
+.content__title:hover:not(.content__title--active) {
   color: var(--softRed);
 }
 .content__title--active {
@@ -143,10 +144,12 @@ body {
 
 
 .attribution {
-  display: none;
-  font-size: 11px;
-  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  color: var(--lightGrayishBlue);
+  font-size: 1rem;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--softRed);
 }
