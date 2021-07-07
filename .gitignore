@@ -15,11 +15,3 @@
 .DS_Store
 
 .prettierignore
-
-
-
-#remove
-README-template.md
-README.md
-style-guide.md
-design
